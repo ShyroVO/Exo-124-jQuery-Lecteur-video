@@ -5,7 +5,7 @@ let progress = $('.progress__filled').first();
 // Play / Pause:
 let playButton = document.getElementsByClassName('player__button');
 
-$('.player__button').on('click', function (){
+$('.toggle').on('click', function (){
     if (playButton[0].innerHTML === "||"){
         $('.player__video')[0].pause();
         playButton[0].innerHTML = "►";
@@ -16,5 +16,7 @@ $('.player__button').on('click', function (){
     }
 })
 
-//timeupdate:
+//timeupdate
+player.addEventListener('timeupdate', function () {
 
+})
